@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="run" type="Application" factoryName="Application" singleton="true">
+    <envs>
+      <env name="WYA_ENV" value="production" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="wya.Main" />
+    <module name="wya_main" />
+    <option name="PROGRAM_PARAMETERS" value="--use-test-db" />
+    <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    <method />
+  </configuration>
+</component>

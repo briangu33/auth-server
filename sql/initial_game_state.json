@@ -1,0 +1,1004 @@
+{
+  "teams": [
+    {
+      "id": "red_team",
+      "displayName": "Kresge Kangaroos",
+      "hexColor": "#f06161",
+      "classYear": "Red"
+    },
+    {
+      "id": "blue_team",
+      "displayName": "Lobby 7 Lemurs",
+      "hexColor": "#2ab1c6",
+      "classYear": "Blue"
+    },
+    {
+      "id": "green_team",
+      "displayName": "Stata Squirrels",
+      "hexColor": "#7bdb7b",
+      "classYear": "Green"
+    }
+  ],
+  "landmarks": [{
+    "id": "mit_stata",
+    "displayName": "Stata Center",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.361863,
+      "longitude": -71.090562
+    },
+    "imageUrl": "/stata.jpg",
+    "description": "The home of Mass Tech\u2019s world-class computer science program.",
+    "active": [{
+      "from": 1526544937000,
+      "to": 1526677200000
+    }, {
+      "from": 1526677200000,
+      "to": 1526763600000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "mit_sloan_school",
+    "displayName": "Sloan",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.361435,
+      "longitude": -71.082916
+    },
+    "imageUrl": "/sloan.jpg",
+    "description": "The home of Mass Tech\u2019s business and management program. \ud83d\udc0d",
+    "active": [{
+      "from": 1526544937000,
+      "to": 1526677200000
+    }, {
+      "from": 1526677200000,
+      "to": 1526763600000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "mit_green_building",
+    "displayName": "Green Building",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.360275,
+      "longitude": -71.089273
+    },
+    "imageUrl": "/green.jpg",
+    "description": "The tallest building in Cambridge.",
+    "active": [{
+      "from": 1526544937000,
+      "to": 1526677200000
+    }, {
+      "from": 1526677200000,
+      "to": 1526763600000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "mit_stratton",
+    "displayName": "Student Center",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.359038,
+      "longitude": -71.094763
+    },
+    "imageUrl": "/stud.jpg",
+    "description": "The student center. \u201cLegend has it that a student once accidentally spent an entire year on the fifth floor psetting. Some say he\u2019s still there.\u201d",
+    "active": [{
+      "from": 1526544937000,
+      "to": 1526677200000
+    }, {
+      "from": 1526677200000,
+      "to": 1526763600000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "mit_great_dome",
+    "displayName": "Great Dome",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.359747,
+      "longitude": -71.09207
+    },
+    "imageUrl": "/dome.jpg",
+    "description": "You don\u2019t need to get on top of this one to capture it.",
+    "active": [{
+      "from": 1526544937000,
+      "to": 1526677200000
+    }, {
+      "from": 1526677200000,
+      "to": 1526763600000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "0smoot",
+    "displayName": "0 Smoots",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.35221,
+      "longitude": -71.09015
+    },
+    "imageUrl": "/smoot.jpeg",
+    "description": "Fun fact 1: The Harvard bridge is 364.4 smoots long, plus or minus one ear. Fun fact 2: Oliver R. Smoot, the student which the unit of measurement was named after, eventually served as President for the International Organization for Standardization. ",
+    "active": [{
+      "from": 1526544937000,
+      "to": 1526677200000
+    }, {
+      "from": 1526677200000,
+      "to": 1526763600000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "mit_media_lab",
+    "displayName": "Media Lab",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.360197,
+      "longitude": -71.08754
+    },
+    "imageUrl": "/medialab.jpg",
+    "description": "An interdisciplinary research lab. Home of some of the best project titles the Institute has to offer, including: \u201cYOUR URGE TO BREATHE IS A LIE,\u201d \u201cHealthy Blockchain,\u201d and \u201cI want to become a cephalopod.\u201d",
+    "active": [{
+      "from": 1526544937000,
+      "to": 1526677200000
+    }, {
+      "from": 1526677200000,
+      "to": 1526763600000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "mit_zesiger",
+    "displayName": "The Z-Center",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.358954,
+      "longitude": -71.095802
+    },
+    "imageUrl": "/zcenter.jpg",
+    "description": "The campus fitness center.",
+    "active": [{
+      "from": 1526544937000,
+      "to": 1526677200000
+    }, {
+      "from": 1526677200000,
+      "to": 1526763600000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "charles_river_w",
+    "displayName": "Charles River (W)",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.353375,
+      "longitude": -71.09548
+    },
+    "imageUrl": "/charlesw.jpg",
+    "description": "We\u2019ll be really impressed if someone gets this one.",
+    "active": [{
+      "from": 1526544937000,
+      "to": 1526677200000
+    }, {
+      "from": 1526677200000,
+      "to": 1526763600000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "charles_river_e",
+    "displayName": "Charles River (E)",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.356169,
+      "longitude": -71.08672
+    },
+    "imageUrl": "/charlese.jpg",
+    "description": "We\u2019ll be really impressed if someone gets this one.",
+    "active": [{
+      "from": 1526544937000,
+      "to": 1526677200000
+    }, {
+      "from": 1526677200000,
+      "to": 1526763600000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "mit_senior_haus",
+    "displayName": "Senior Haus",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.360023,
+      "longitude": -71.08694
+    },
+    "imageUrl": "/senior.jpg",
+    "description": "A former undergraduate dormitory. \u201cSport death\u201d",
+    "active": [{
+      "from": 1526677200000,
+      "to": 1526763600000
+    }]
+  }, {
+    "id": "mit_mccormick_hall",
+    "displayName": "McCormick Hall",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.357089,
+      "longitude": -71.094372
+    },
+    "imageUrl": "/mccormick.jpg",
+    "description": "An undergraduate dormitory.",
+    "active": [{
+      "from": 1526677200000,
+      "to": 1526763600000
+    }]
+  }, {
+    "id": "mit_east_campus",
+    "displayName": "East Campus",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.360311,
+      "longitude": -71.088401
+    },
+    "imageUrl": "/ec.jpeg",
+    "description": "An undergraduate dormitory. \u201cThe 4 C\u2019s: cats, counterculture, clothing optional and Cambridge City Fire Code Compliant\u201d",
+    "active": [{
+      "from": 1526677200000,
+      "to": 1526763600000
+    }]
+  }, {
+    "id": "mit_next_house",
+    "displayName": "Next House",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.354705,
+      "longitude": -71.101834
+    },
+    "imageUrl": "/next.jpg",
+    "description": "An undergraduate dormitory. \u201cI\u2019m pretty sure that Next to main campus is acceptable Uber distance.\u201d",
+    "active": [{
+      "from": 1526677200000,
+      "to": 1526763600000
+    }]
+  }, {
+    "id": "mit_new_house",
+    "displayName": "New House",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.355145,
+      "longitude": -71.100603
+    },
+    "imageUrl": "/new.JPG",
+    "description": "An undergraduate dormitory.",
+    "active": [{
+      "from": 1526677200000,
+      "to": 1526763600000
+    }]
+  }, {
+    "id": "mit_burton_conner",
+    "displayName": "Burton Conner",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.356104,
+      "longitude": -71.097765
+    },
+    "imageUrl": "/bc.jpg",
+    "description": "An undergraduate dormitory.",
+    "active": [{
+      "from": 1526677200000,
+      "to": 1526763600000
+    }]
+  }, {
+    "id": "mit_maseeh_hall",
+    "displayName": "Maseeh Hall",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.357688,
+      "longitude": -71.093493
+    },
+    "imageUrl": "/maseeh.jpg",
+    "description": "An undergraduate dormitory.",
+    "active": [{
+      "from": 1526677200000,
+      "to": 1526763600000
+    }]
+  }, {
+    "id": "mit_random_hall",
+    "displayName": "Random Hall",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.361867,
+      "longitude": -71.098291
+    },
+    "imageUrl": "/random.jpg",
+    "description": "An undergraduate dormitory.",
+    "active": [{
+      "from": 1526677200000,
+      "to": 1526763600000
+    }]
+  }, {
+    "id": "mit_macgregor_house",
+    "displayName": "MacGregor House",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.355483,
+      "longitude": -71.099529
+    },
+    "imageUrl": "/macgregor.jpg",
+    "description": "An undergraduate dormitory.",
+    "active": [{
+      "from": 1526677200000,
+      "to": 1526763600000
+    }]
+  }, {
+    "id": "mit_baker_house",
+    "displayName": "Baker House",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.35677,
+      "longitude": -71.09576
+    },
+    "imageUrl": "/baker.jpg",
+    "description": "An undergraduate dormitory. \u201cHost of the most hotly anticipated party of the year, the Baker Horizon Party.\u201d",
+    "active": [{
+      "from": 1526677200000,
+      "to": 1526763600000
+    }]
+  }, {
+    "id": "mit_simmons_hall",
+    "displayName": "Simmons Hall",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.357104,
+      "longitude": -71.10142
+    },
+    "imageUrl": "/simmons.JPG",
+    "description": "An undergraduate dormitory. \u201cThe dorm where you have more windows than friends.\u201d",
+    "active": [{
+      "from": 1526677200000,
+      "to": 1526763600000
+    }]
+  }, {
+    "id": "mit_museum",
+    "displayName": "Mass Tech Museum",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.362253,
+      "longitude": -71.09754
+    },
+    "imageUrl": "/museum.jpg",
+    "description": "The famous Mass Tech Museum.",
+    "active": [{
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }]
+  }, {
+    "id": "mit_hayden",
+    "displayName": "Hayden Library",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.359045,
+      "longitude": -71.0895
+    },
+    "imageUrl": "/hayden.jpg",
+    "description": "One of the busiest libraries on campus.",
+    "active": [{
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }]
+  }, {
+    "id": "mit_kresge",
+    "displayName": "Kresge Oval",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.358257,
+      "longitude": -71.09463
+    },
+    "imageUrl": "/kresge.jpg",
+    "description": "Arguably better with a tent on it.",
+    "active": [{
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }]
+  }, {
+    "id": "mit_killian",
+    "displayName": "Killian Court",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.359017,
+      "longitude": -71.091617
+    },
+    "imageUrl": "/killian.jpg",
+    "description": "The iconic lawn underneath the Great Dome.",
+    "active": [{
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }]
+  }, {
+    "id": "mit_sailing_pavilion",
+    "displayName": "Sailing Pavilion",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.358533,
+      "longitude": -71.087737
+    },
+    "imageUrl": "/sailing.jpg",
+    "description": "A place with boats!",
+    "active": [{
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }]
+  }, {
+    "id": "mit_chapel",
+    "displayName": "Chapel",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.358328,
+      "longitude": -71.0941
+    },
+    "imageUrl": "/chapel.jpg",
+    "description": "The on-campus chapel.",
+    "active": [{
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }]
+  }, {
+    "id": "mit_walker",
+    "displayName": "Walker Memorial",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.359368,
+      "longitude": -71.088324
+    },
+    "imageUrl": "/walker.jpeg",
+    "description": "The former student center.",
+    "active": [{
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }]
+  }, {
+    "id": "mit_coop",
+    "displayName": "Kendall Coop",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.362582,
+      "longitude": -71.08641
+    },
+    "imageUrl": "/coop.png",
+    "description": "A strange store that sells off-brand, unlicensed Institute merchandise.",
+    "active": [{
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }]
+  }, {
+    "id": "mit_lobby_7",
+    "displayName": "Lobby 7",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.359189,
+      "longitude": -71.09316
+    },
+    "imageUrl": "/lobby7.jpg",
+    "description": "The entrance to the Main Group.",
+    "active": [{
+      "from": 1526936400000,
+      "to": 1527022800000
+    }, {
+      "from": 1526936400000,
+      "to": 1527022800000
+    }]
+  }, {
+    "id": "harvard_T",
+    "displayName": "Harvard T",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.373472,
+      "longitude": -71.11894
+    },
+    "imageUrl": "/harvardt.jpg",
+    "description": "The Harvard Square T Station.",
+    "active": [{
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "bpl",
+    "displayName": "Boston Public Library",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.349473,
+      "longitude": -71.07886
+    },
+    "imageUrl": "/bpl.jpg",
+    "description": "Boston\u2019s historic public library.",
+    "active": [{
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "central_T",
+    "displayName": "Central T",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.365252,
+      "longitude": -71.10361
+    },
+    "imageUrl": "/central.jpg",
+    "description": "The Central T Station.",
+    "active": [{
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "cambridgeside",
+    "displayName": "Cambridgeside Galleria",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.367134,
+      "longitude": -71.07637
+    },
+    "imageUrl": "/galleria.jpg",
+    "description": "A popular shopping destination. Contains the Taco Bell geographically nearest to campus.",
+    "active": [{
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "star_market",
+    "displayName": "Star Market",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.362098,
+      "longitude": -71.09988
+    },
+    "imageUrl": "/star.jpg",
+    "description": "Goodbye, my old friend.",
+    "active": [{
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "mit_T",
+    "displayName": "Kendall T",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.362291,
+      "longitude": -71.08627
+    },
+    "imageUrl": "/kendallt.jpeg",
+    "description": "The Kendall Square T Station.",
+    "active": [{
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "harvard",
+    "displayName": "Harvard ",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.374304,
+      "longitude": -71.1162
+    },
+    "imageUrl": "/harvard.jpg",
+    "description": "A small liberal arts college near Mass Tech.",
+    "active": [{
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "711",
+    "displayName": "7/11",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.36313,
+      "longitude": -71.09331
+    },
+    "imageUrl": "/711.jpg",
+    "description": "A Mass Tech student, following the announcement that LaVerdes would no longer be open 24/7: \u201cLaVerdes was the expensive ho who turned out to be unloyal. 7-Eleven is the faithful, distant bae that welcomes us with open arms.\u201d",
+    "active": [{
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }, {
+    "id": "prudential",
+    "displayName": "Prudential Center",
+    "ownerTeamId": null,
+    "location": {
+      "latitude": 42.347478,
+      "longitude": -71.08263
+    },
+    "imageUrl": "/prudential.jpg",
+    "description": "A popular shopping destination.",
+    "active": [{
+      "from": 1527022800000,
+      "to": 1527026400000
+    }, {
+      "from": 1527022800000,
+      "to": 1527026400000
+    }]
+  }],
+  "territories": [{
+    "id": "mit_stata_territory",
+    "displayName": "Stata Territory",
+    "mainLandmarkId": "mit_stata",
+    "hull": [{
+      "latitude": 42.363863,
+      "longitude": -71.08748919391132
+    }, {
+      "latitude": 42.362373593161436,
+      "longitude": -71.08831028980578
+    }, {
+      "latitude": 42.36039771254111,
+      "longitude": -71.09074450115185
+    }, {
+      "latitude": 42.362973926308904,
+      "longitude": -71.09435940057669
+    }, {
+      "latitude": 42.363863,
+      "longitude": -71.09495726612712
+    }, {
+      "latitude": 42.363863,
+      "longitude": -71.08748919391132
+    }]
+  }, {
+    "id": "mit_sloan_school_territory",
+    "displayName": "Sloan Territory",
+    "mainLandmarkId": "mit_sloan_school",
+    "hull": [{
+      "latitude": 42.353816202810485,
+      "longitude": -71.077916
+    }, {
+      "latitude": 42.35868627767661,
+      "longitude": -71.084657801852
+    }, {
+      "latitude": 42.363863,
+      "longitude": -71.08604378416955
+    }, {
+      "latitude": 42.363863,
+      "longitude": -71.077916
+    }, {
+      "latitude": 42.353816202810485,
+      "longitude": -71.077916
+    }]
+  }, {
+    "id": "mit_green_building_territory",
+    "displayName": "G-Building Territory",
+    "mainLandmarkId": "mit_green_building",
+    "hull": [{
+      "latitude": 42.362373593161436,
+      "longitude": -71.08831028980578
+    }, {
+      "latitude": 42.35790174864889,
+      "longitude": -71.08851156151495
+    }, {
+      "latitude": 42.35692139738792,
+      "longitude": -71.09008826432635
+    }, {
+      "latitude": 42.36039771254111,
+      "longitude": -71.09074450115185
+    }, {
+      "latitude": 42.362373593161436,
+      "longitude": -71.08831028980578
+    }]
+  }, {
+    "id": "mit_stratton_territory",
+    "displayName": "Stud Territory",
+    "mainLandmarkId": "mit_stratton",
+    "hull": [{
+      "latitude": 42.363863,
+      "longitude": -71.09495726612712
+    }, {
+      "latitude": 42.362973926308904,
+      "longitude": -71.09435940057669
+    }, {
+      "latitude": 42.35587332068607,
+      "longitude": -71.09248998751075
+    }, {
+      "latitude": 42.356198246218206,
+      "longitude": -71.09505631008886
+    }, {
+      "latitude": 42.363863,
+      "longitude": -71.09567598219444
+    }, {
+      "latitude": 42.363863,
+      "longitude": -71.09495726612712
+    }]
+  }, {
+    "id": "mit_great_dome_territory",
+    "displayName": "Big Dome Territory",
+    "mainLandmarkId": "mit_great_dome",
+    "hull": [{
+      "latitude": 42.35692139738792,
+      "longitude": -71.09008826432635
+    }, {
+      "latitude": 42.35609860185217,
+      "longitude": -71.09063853767718
+    }, {
+      "latitude": 42.355706410066084,
+      "longitude": -71.09217809470412
+    }, {
+      "latitude": 42.35587332068607,
+      "longitude": -71.09248998751075
+    }, {
+      "latitude": 42.362973926308904,
+      "longitude": -71.09435940057669
+    }, {
+      "latitude": 42.36039771254111,
+      "longitude": -71.09074450115185
+    }, {
+      "latitude": 42.35692139738792,
+      "longitude": -71.09008826432635
+    }]
+  }, {
+    "id": "0smoot_territory",
+    "displayName": "Smoot Territory",
+    "mainLandmarkId": "0smoot",
+    "hull": [{
+      "latitude": 42.35021,
+      "longitude": -71.09337946763601
+    }, {
+      "latitude": 42.355706410066084,
+      "longitude": -71.09217809470412
+    }, {
+      "latitude": 42.35609860185217,
+      "longitude": -71.09063853767718
+    }, {
+      "latitude": 42.35021,
+      "longitude": -71.0838417520408
+    }, {
+      "latitude": 42.35021,
+      "longitude": -71.09337946763601
+    }]
+  }, {
+    "id": "mit_media_lab_territory",
+    "displayName": "Media Lab Territory",
+    "mainLandmarkId": "mit_media_lab",
+    "hull": [{
+      "latitude": 42.363863,
+      "longitude": -71.08604378416955
+    }, {
+      "latitude": 42.35868627767661,
+      "longitude": -71.084657801852
+    }, {
+      "latitude": 42.35790174864889,
+      "longitude": -71.08851156151495
+    }, {
+      "latitude": 42.362373593161436,
+      "longitude": -71.08831028980578
+    }, {
+      "latitude": 42.363863,
+      "longitude": -71.08748919391132
+    }, {
+      "latitude": 42.363863,
+      "longitude": -71.08604378416955
+    }]
+  }, {
+    "id": "mit_zesiger_territory",
+    "displayName": "Z-Center Territory",
+    "mainLandmarkId": "mit_zesiger",
+    "hull": [{
+      "latitude": 42.363863,
+      "longitude": -71.09567598219444
+    }, {
+      "latitude": 42.356198246218206,
+      "longitude": -71.09505631008886
+    }, {
+      "latitude": 42.3555780432873,
+      "longitude": -71.10580200000001
+    }, {
+      "latitude": 42.363863,
+      "longitude": -71.10580200000001
+    }, {
+      "latitude": 42.363863,
+      "longitude": -71.09567598219444
+    }]
+  }, {
+    "id": "charles_river_w_territory",
+    "displayName": "River (W) Territory",
+    "mainLandmarkId": "charles_river_w",
+    "hull": [{
+      "latitude": 42.3555780432873,
+      "longitude": -71.10580200000001
+    }, {
+      "latitude": 42.356198246218206,
+      "longitude": -71.09505631008886
+    }, {
+      "latitude": 42.35587332068607,
+      "longitude": -71.09248998751075
+    }, {
+      "latitude": 42.355706410066084,
+      "longitude": -71.09217809470412
+    }, {
+      "latitude": 42.35021,
+      "longitude": -71.09337946763601
+    }, {
+      "latitude": 42.35021,
+      "longitude": -71.10580200000001
+    }, {
+      "latitude": 42.3555780432873,
+      "longitude": -71.10580200000001
+    }]
+  }, {
+    "id": "charles_river_e_territory",
+    "displayName": "River (E) Territory",
+    "mainLandmarkId": "charles_river_e",
+    "hull": [{
+      "latitude": 42.35021,
+      "longitude": -71.0838417520408
+    }, {
+      "latitude": 42.35609860185217,
+      "longitude": -71.09063853767718
+    }, {
+      "latitude": 42.35692139738792,
+      "longitude": -71.09008826432635
+    }, {
+      "latitude": 42.35790174864889,
+      "longitude": -71.08851156151495
+    }, {
+      "latitude": 42.35868627767661,
+      "longitude": -71.084657801852
+    }, {
+      "latitude": 42.353816202810485,
+      "longitude": -71.077916
+    }, {
+      "latitude": 42.35021,
+      "longitude": -71.077916
+    }, {
+      "latitude": 42.35021,
+      "longitude": -71.0838417520408
+    }]
+  }]
+}

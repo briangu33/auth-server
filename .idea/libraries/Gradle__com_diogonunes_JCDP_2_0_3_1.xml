@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.diogonunes:JCDP:2.0.3.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.diogonunes/JCDP/2.0.3.1/6df9c2d171e75e7301d2c5926d7706836492c88d/JCDP-2.0.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.diogonunes/JCDP/2.0.3.1/1b656a6b0e62d86a621ff0418718d3fe0727430f/JCDP-2.0.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,8 @@
+.idea/workspace.xml
+.gradle
+build
+wya.data
+*.sqlite
+out
+logs.log
+temp/
