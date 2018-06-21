@@ -2,12 +2,12 @@ package wya.data;
 
 import org.jetbrains.annotations.NotNull;
 
-public class User {
+public class UserAuth {
     public @NotNull String id;
     public @NotNull String displayName;
     public @NotNull String email;
 
-    public User(
+    public UserAuth(
             String id,
             String displayName,
             String email) {

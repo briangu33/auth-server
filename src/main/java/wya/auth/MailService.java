@@ -17,8 +17,7 @@ public class MailService {
     private MailService() {
     }
 
-    public static void sendAuthEmail(String displayName, String pin) throws IOException, InterruptedException {
-        String email = displayName + "@mit.edu";
+    public static void sendAuthEmail(String displayName, String email, String pin) throws IOException, InterruptedException {
         WyaLogger.d("auth code is " + pin);
 
         sendEmail(email, "Your Wya Confirmation Code", "Hi " + displayName + "! Your Wya verification code is: \n" + pin + "\n\nIf you run into any issues, feel free to email us at wya.devs@gmail.com.");

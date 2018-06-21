@@ -24,6 +24,7 @@ dependencies {
     compile group: 'com.mashape.unirest', name: 'unirest-java', version: '1.4.9'
     compile 'com.google.apis:google-api-services-gmail:v1-rev83-1.23.0'
     compile 'com.datadoghq:java-dogstatsd-client:2.5'
+    compile 'com.google.firebase:firebase-admin:6.2.0'
     implementation 'com.google.firebase:firebase-admin:6.2.0'
 }
 

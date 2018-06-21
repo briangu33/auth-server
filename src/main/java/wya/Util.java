@@ -2,7 +2,6 @@ package wya;
 
 import com.google.gson.*;
 import org.joda.time.DateTime;
-import wya.data.LatLong;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import spark.Request;
@@ -51,78 +50,6 @@ public class Util {
 
     public static ResponseTransformer json() {
         return Util::json;
-    }
-
-    /**
-     * Calculate getDistance between two points in latitude and longitude taking
-     * into account height difference. If you are not interested in height
-     * difference pass 0.0. Uses Haversine method as its base.
-     * <p>
-     * lat1, lon1 Start point lat2, lon2 End point el1 Start altitude in meters
-     * el2 End altitude in meters
-     * <p>
-     * Shamelessly stolen and slightly modified from the solution posted here:
-     * https://stackoverflow.com/questions/3694380/calculating-distance-between-two-points-using-latitude-longitude-what-am-i-doi
-     *
-     * @returns Distance in Feet
-     */
-    public static double getDistance(LatLong first, LatLong second) {
-        final int R = 6371; // Radius of the earth
-
-        double latDistance = toRadians(second.latitude - first.latitude);
-        double lonDistance = toRadians(second.longitude - first.longitude);
-        double a = sin(latDistance / 2) * sin(latDistance / 2)
-                + cos(toRadians(first.latitude)) * cos(toRadians(second.latitude))
-                * sin(lonDistance / 2) * sin(lonDistance / 2);
-        double c = 2 * atan2(Math.sqrt(a), Math.sqrt(1 - a));
-        double distance = R * c * 1000; // convert to meters
-
-        return Math.abs(distance * 3.28084);
-    }
-
-    // stolen from here: https://github.com/grumlimited/geocalc/blob/master/src/main/java/com/grum/geocalc/EarthCalc.java#L214
-    public static double getBearing(LatLong standPoint, LatLong forePoint) {
-        /**
-         * Formula: θ = atan2( 	sin(Δlong).cos(lat2), cos(lat1).sin(lat2) − sin(lat1).cos(lat2).cos(Δlong) )
-         */
-
-        double y = sin(toRadians(forePoint.longitude - standPoint.longitude)) * cos(toRadians(forePoint.latitude));
-        double x = cos(toRadians(standPoint.latitude)) * sin(toRadians(forePoint.latitude))
-                - sin(toRadians(standPoint.latitude)) * cos(toRadians(forePoint.latitude)) * cos(toRadians(forePoint.longitude - standPoint.longitude));
-
-        double bearing = (atan2(y, x) + 2 * PI) % (2 * PI);
-
-        return toDegrees(bearing);
-    }
-
-    /**
-     * Determine whether a LatLong pair is within a polygon determined by its hull.
-     * Note that this method is based on casting a ray from the point horizontally.
-     * It is only accurate for polygons on a Euclidean plane, while the surface of the
-     * Earth is curved. This is thus just an approximation.
-     * Minimally modified from https://stackoverflow.com/a/38675842.
-     *
-     * @param p
-     * @param hull
-     * @return whether the point is in the hull
-     */
-    public static boolean pointInHull(LatLong p, List<LatLong> hull) {
-        int intersections = 0;
-
-        LatLong prev = hull.get(hull.size() - 1);
-        for (LatLong next : hull) {
-            if ((prev.longitude <= p.longitude && p.longitude < next.longitude) || (prev.longitude >= p.longitude && p.longitude > next.longitude)) {
-                double dy = next.longitude - prev.longitude;
-                double dx = next.latitude - prev.latitude;
-                double x = (p.longitude - prev.longitude) / dy * dx + prev.latitude;
-                if (x > p.latitude) {
-                    intersections++;
-                }
-            }
-            prev = next;
-        }
-
-        return intersections % 2 == 1;
     }
 
     @Nullable

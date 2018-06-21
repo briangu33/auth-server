@@ -1,5 +1,7 @@
 package wya.auth;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthException;
 import org.jetbrains.annotations.NotNull;
 import wya.CacheAndLockManager;
 import wya.WyaLogger;
@@ -8,6 +10,7 @@ import wya.data.*;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Random;
+import java.util.concurrent.ExecutionException;
 
 public class LoginService {
 
@@ -15,10 +18,7 @@ public class LoginService {
 
     private static LoginService instance;
 
-    private final Object monoLock;
-
-    private LoginService() throws SQLException, IOException {
-        monoLock = CacheAndLockManager.getInstance().getMonoLock();
+    private LoginService() {
     }
 
     // singleton
@@ -36,58 +36,34 @@ public class LoginService {
     // clear PIN in db if exists
     // set an auth PIN in db
     // call sendAuthEmail
-    public LoginResponse handleLoginRequest(@NotNull LoginRequest request) throws SQLException, IOException, InterruptedException {
-        synchronized (monoLock) {
-            User user = PersistenceLayer.getUserSessionForEmail(request.email);
-            if (user == null) {
-                user = makeUser(request.displayName, request.email);
-            }
-            String pin = generatePIN();
-            PersistenceLayer.setPin(user.id, pin);
-            MailService.sendAuthEmail(request.displayName, pin);
-            return new LoginResponse("Logged in successfully.", true);
-        }
+    public LoginResponse handleLoginRequest(@NotNull LoginRequest request) throws IOException, InterruptedException, ExecutionException {
+        FirebaseHelper.createAuthObjectIfDoesntExist(request.displayName, request.email);
+        UserAuth userAuth = FirebaseHelper.getAuthObjectWithEmail(request.email);
+        String pin = generatePIN();
+        FirebaseHelper.setPin(userAuth.id, pin);
+        MailService.sendAuthEmail(userAuth.displayName, userAuth.email, pin);
+
+        return new LoginResponse("Logged in successfully.", true);
+
     }
 
-    public ResendEmailResponse resendEmail(@NotNull ResendEmailRequest request) throws SQLException, IOException, InterruptedException {
-        synchronized (monoLock) {
-            User user = PersistenceLayer.getUserSessionForEmail(request.email);
-            String pin = generatePIN();
-            PersistenceLayer.setPin(user.id, pin);
-            MailService.sendAuthEmail(request.displayName, pin);
-            return new ResendEmailResponse("Email resent successfully.");
-        }
+    public ResendEmailResponse resendEmail(@NotNull ResendEmailRequest request) throws IOException, InterruptedException, ExecutionException {
+        UserAuth userAuth = FirebaseHelper.getAuthObjectWithEmail(request.email);
+        String pin = generatePIN();
+        FirebaseHelper.setPin(userAuth.id, pin);
+        MailService.sendAuthEmail(userAuth.displayName, userAuth.email, pin);
+        return new ResendEmailResponse("Email resent successfully.", true);
     }
 
     // if pin is correct, register a token with firebase and send back a token
-    public AuthResponse activateUser(@NotNull AuthRequest request) throws SQLException {
-        synchronized (monoLock) {
-            User user = PersistenceLayer.getUserSessionForEmail(request.email);
-            if (request.displayName.equals("test") && request.pin.equals("1111") || request.pin.equals("7394")) {
-                return new AuthResponse(true, user.writeToken);
-            }
-            boolean validated = PersistenceLayer.validatePin(request.displayName, request.pin);
-            if (!validated) {
-                return new AuthResponse(false, null);
-            }
-            return new AuthResponse(true, user.writeToken);
+    public AuthResponse activateUser(@NotNull AuthRequest request) throws FirebaseAuthException, ExecutionException, InterruptedException {
+        UserAuth userAuth = FirebaseHelper.getAuthObjectWithEmail(request.email);
+        boolean validated = FirebaseHelper.validatePin(userAuth.id, request.pin);
+        if (!validated) {
+            return new AuthResponse(false, null);
         }
-    }
-
-    // once per day, flush pins from db (so they expire after no more than 24h)
-    public static void cleanPINs() {
-
-    }
-
-    @NotNull
-    private User makeUser(@NotNull String displayName, @NotNull String email) throws IllegalStateException, SQLException {
-        synchronized (monoLock) {
-            User newUser = PersistenceLayer.createUser(displayName, email);
-
-            WyaLogger.d("made a new user: " + displayName + " (" + newUser.id + ")");
-
-            return newUser;
-        }
+        String firebaseToken = FirebaseAuth.getInstance().createCustomToken(userAuth.id);
+        return new AuthResponse(true, firebaseToken);
     }
 
     public static String generatePIN() {

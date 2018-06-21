@@ -1,8 +1,15 @@
 package wya;
 
+import com.google.auth.oauth2.GoogleCredentials;
+import com.google.cloud.firestore.Firestore;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
+import com.google.firebase.cloud.FirestoreClient;
 import spark.Spark;
-import wya.game.Game;
-import wya.auth.PersistenceLayer;
+import wya.auth.FirebaseHelper;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
 
 import static spark.Spark.*;
 
@@ -17,8 +24,6 @@ public class Server {
         WyaLogger.d(staticDirectory);
 
         Spark.externalStaticFileLocation(staticDirectory);
-
-        PersistenceLayer.initDatabase();
 
         WyaLogger.d("starting on port: " + PORT);
         port(PORT);
@@ -40,8 +45,19 @@ public class Server {
             return "{\"errorMessage\":\"500: server error\"}";
         });
 
-        apiController = new ApiController();
+        WyaLogger.d("initializing Firebase SDK...");
+        String keyPath = System.getProperty("user.dir") + "/wya-mit-firebase-adminsdk-kx6a7-3f0e9200f6.json";
+        InputStream serviceAccount = new FileInputStream(keyPath);
+        GoogleCredentials credentials = GoogleCredentials.fromStream(serviceAccount);
+        FirebaseOptions options = new FirebaseOptions.Builder()
+                .setCredentials(credentials)
+                .build();
+        FirebaseApp.initializeApp(options);
 
-        Game.getInstance();
+        Firestore db = FirestoreClient.getFirestore();
+
+        FirebaseHelper.init(db);
+
+        apiController = new ApiController();
     }
 }

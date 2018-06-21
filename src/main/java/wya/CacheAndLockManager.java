@@ -1,8 +1,8 @@
 package wya;
 
 import org.jetbrains.annotations.NotNull;
-import wya.data.User;
-import wya.auth.PersistenceLayer;
+import wya.data.UserAuth;
+import wya.auth.FirebaseHelper;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -14,18 +14,14 @@ public class CacheAndLockManager {
 
     private static CacheAndLockManager instance;
 
-    private final Object userCacheLock = new Object();
-    private final List<User> userCache;
     private final Object monoLock = new Object();
 
-    private CacheAndLockManager() throws SQLException, IOException {
-        PersistenceLayer.setInitialState();
+    private CacheAndLockManager() {
 
-        userCache = PersistenceLayer.getAllUsers();
     }
 
     @NotNull
-    public static CacheAndLockManager getInstance() throws SQLException, IOException {
+    public static CacheAndLockManager getInstance() {
         synchronized (instanceLock) {
             if (instance == null) {
                 instance = new CacheAndLockManager();
@@ -35,16 +31,8 @@ public class CacheAndLockManager {
         }
     }
 
-    public Object getUserCacheLock() {
-        return this.userCacheLock;
-    }
-
     public Object getMonoLock() {
         return this.monoLock;
-    }
-
-    public List<User> getUserCache() {
-        return this.userCache;
     }
 
 }

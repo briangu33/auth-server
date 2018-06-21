@@ -6,26 +6,26 @@ import org.jetbrains.annotations.Nullable;
 public class AuthResponse {
 
     public boolean authenticated;
-    public @Nullable String writeToken;
+    public @Nullable String token;
     public final @Nullable WyaError wyaError;
 
-    public AuthResponse(boolean authenticated, String writeToken) {
+    public AuthResponse(boolean authenticated, String token) {
         this.authenticated = authenticated;
         if (authenticated) {
-            this.writeToken = writeToken;
+            this.token = token;
         }
         this.wyaError = null;
     }
 
     public AuthResponse(boolean authenticated) {
         this.authenticated = authenticated;
-        this.writeToken = null;
+        this.token = null;
         this.wyaError = null;
     }
 
     public AuthResponse(WyaError error) {
         this.authenticated = false;
-        this.writeToken = null;
+        this.token = null;
         this.wyaError = error;
     }
 }
